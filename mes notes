@@ -1,0 +1,60 @@
+1) filtrage gaussien premiere question
+(deux facons davoir gradient [-1][1] plus sensible au bruit)
+-45 deg (pi/4)
+	gradient [-1][1] (ordre 1)mm derivée croissante dans les deux sens
+			x------------>
+		[-1]y|45 deg (pi/4)
+ 		[ 1] |
+ 			 |			
+             |
+
+     [-1][0][1] derivé seconde moins sensible au bruit
+     filtre gaussien dans le domaine frequenciel
+     creer au centre de limage un filtre gausse 
+     ramener la gaussienne aux quatres point puis faire
+     creer la gaussienne +ramener au centre 
+     TF (image ) produit F[gaussien] puis TFD⁻¹
+
+1-2)p 17 dessin
+-----> le long du gradient
+le perponduclaire au grandient = le long du conture =le long de la tg au contoure
+\theta langle entre x t ---------> theta =jy/jx
+1ere formule de arctan se trouve le cours
+langlane de la tangetante de la dir du contour c'est epsilon zero dans l'enoncé
+j=grandient
+
+next) approximer
+se rappelerl'angle tangent -pi/2 et pi/2 defini a pi pres 
+lorseque landgle <0 on lui ajoute pi
+approximer l'angle dans une direction
+approximer la tangente au contour 
+
+2) supp de non maximum
+((((la on parle du long du gradient))))
+le perpondiculaire a la direction du contour 
+(b)-------------->(c)
+cava raffiner la longuer de gradient pour avoir quelque chose de plus fin
+
+next)p22 seuillage par 
+ya deux seuil th et tb
+pour tout pixel (i,j) e's>t_h
+			les mettre comme contour
+			fct_follow()
+			
+fct_follow(){
+	si e's[i][j]>th --> [i][j] est un contour
+	follow(i+1,j+1)
+	follow(i-1,j-1) dans la direction de contour ( ca peut changer )
+3-2)
+tl =0.5 th 
+methode dependeante de th
+faire lhistogramme nomalisé de Es de la photo (b)
+
+fct de repartition sur lhisto
+
+si au lieu d'une ligne nette au n'a des points on s'est trompé de direction
+
+
+}
+
+
