@@ -1,7 +1,7 @@
 /*------------------------------------------------------*/
 /* Prog    : TpIFT6150-2.c                              */
-/* Auteur  : Ahmed Amine DAOU & Wrushabh Warshe         */
-/* Date    :                                            */
+/* Auteur  : Ahmed Amine DAOU                           */
+/* Date    : 02/12/18                                   */
 /* version :                                            */ 
 /* langage : C                                          */
 /* labo    : DIRO                                       */
@@ -20,7 +20,7 @@
 /*------------------------------------------------*/
 /* DEFINITIONS -----------------------------------*/                              
 /*------------------------------------------------*/
-#define NAME_IMG_IN  "photograph"
+#define NAME_IMG_IN  "satelliteVille"
 #define NAME_IMG_GAUSSIEN "TpIFT6150-2-gaussien"
 #define NAME_IMG_GRADIENT "TpIFT6150-2-gradient"
 #define NAME_IMG_SUPPRESSION "TpIFT6150-2-suppression"
